@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a84a69e726.js" crossorigin="anonymous"></script>
+</head>
+<body style="display: flex; width: 100%; flex-direction: column; height: 100%;">
+    <nav>
+        <span id="Brand">
+            Rookie Play
+        </span>
+        <ul id="listings">
+            <li>Home</li>
+            <li>Settings</li>
+            <li>Profile</li>
+        </ul>
+    </nav>
+    <main>
+        <aside id="songs">
+            <ul id="songList">
+
+            </ul>
+        </aside>
+        <div id="cover">
+            <img src="" alt="">
+        </div>
+        <section id="player">
+            <input type="range" id="progress" style="grid-area: progress; width: 100%;">
+            <button id="previous" style="grid-area: previous; place-self: end; height: 100%; width: 50%; background-color: rgba(50, 41, 41, 0.675); border: none; outline: none;"><i class="fa-solid fa-backward"></i></button>
+            <button id="start" style="grid-area: start; place-self: center; width: 50%; height: 100%; background-color: rgba(50, 41, 41, 0.675); border: none; outline: none;"><i class="fa-solid fa-play"></i></button>
+            <button id="next" style="grid-area: next; place-self: start; width: 50%; height: 100%; background-color: rgba(50, 41, 41, 0.675); border: none; outline: none;"><i class="fa-solid fa-forward"></i></button>
+        </section>
+    </main>
+    <footer style="flex:1">
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
