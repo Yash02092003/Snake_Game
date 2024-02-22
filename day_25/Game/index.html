@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 5fr 1fr 1fr;
+            grid-template-areas: "canvas start reset";
+            background-image: url("./Snake-game.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        canvas{
+            grid-area: canvas;
+            background-image: url('./Background.webp');
+            background-size: cover;
+            border: 5px solid green;
+        }
+        #start{
+            place-self: end;
+            height: 10rem;
+            width: 12rem;
+            border-radius: 40%;
+            outline: none;
+            background-color: forestgreen;
+            opacity: 0.7;
+
+        }
+        #reset{
+            place-self: end;
+            height: 10rem;
+            width: 12rem;
+            border-radius: 40%;
+            outline: none;
+            background-color: red;
+            opacity: 0.7;
+        }
+        #start:hover{
+            transform: scale(1.2 , 1.2);
+            cursor: pointer;
+        }
+        #reset:hover{
+            transform: scale(1.2 , 1.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <canvas height="600" width="1000"></canvas>
+    <button id="start" style="grid-area: start;">Start</button>
+    <button id="reset" style="grid-area: reset;">Reset</button>
+    <script src="app.js"></script>
+</body>
+</html>
